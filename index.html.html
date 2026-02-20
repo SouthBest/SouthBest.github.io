@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ZeroPoverty</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-padding-top: 80px;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #f8fafc;
+            color: #2c3e50;
+            line-height: 1.7;
+        }
+
+        /* NAVIGATION */
+        nav {
+            position: fixed;
+            width: 100%;
+            background: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 40px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            z-index: 1000;
+        }
+
+        nav h2 {
+            color: #e74c3c;
+        }
+
+        nav a {
+            text-decoration: none;
+            margin-left: 20px;
+            color: #2c3e50;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: #e74c3c;
+        }
+
+        /* HEADER */
+        header {
+            padding-top: 120px;
+            padding-bottom: 80px;
+            text-align: center;
+            background: linear-gradient(135deg, #e74c3c, #ff6f61);
+            color: white;
+        }
+
+        header h1 {
+            font-size: 2.8em;
+        }
+
+        header p {
+            margin-top: 15px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 1.2em;
+        }
+
+        /* SECTIONS */
+        section {
+            padding: 70px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 25px;
+            color: #e74c3c;
+        }
+
+        .stats {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .stat-box {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            flex: 1 1 250px;
+            text-align: center;
+        }
+
+        .stat-box h3 {
+            font-size: 1.8em;
+            color: #e74c3c;
+        }
+
+        ul {
+            max-width: 850px;
+            margin: auto;
+            line-height: 1.8;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .cta-section {
+            text-align: center;
+        }
+
+        .cta-btn {
+            margin: 15px;
+            background: #e74c3c;
+            border: none;
+            padding: 14px 30px;
+            color: white;
+            font-size: 16px;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: background 0.2s ease;
+        }
+
+        .cta-btn:hover {
+            background: #c0392b;
+        }
+
+        footer {
+            background: #1a1a1a;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                padding: 15px 20px;
+            }
+
+            header h1 {
+                font-size: 2em;
+            }
+
+            .stats {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <h2>ZeroPoverty</h2>
+    <div>
+        <a href="#about">About</a>
+        <a href="#facts">Facts</a>
+        <a href="#solutions">Solutions</a>
+        <a href="#action">Action</a>
+    </div>
+</nav>
+
+<header>
+    <h1>End Poverty Through Awareness & Action</h1>
+    <p>
+        Poverty affects millions worldwide through lack of food, clean water, healthcare,
+        and education. Together, we can build sustainable solutions to break the cycle of poverty.
+    </p>
+</header>
+
+<section id="about">
+    <h2>What is Poverty?</h2>
+    <p>
+        Poverty is the condition where individuals lack sufficient income and resources
+        to maintain a basic standard of living. It is not just about money; it also includes
+        limited access to essential services such as healthcare, education, clean water,
+        nutritious food, and safe housing.
+    </p>
+    <p>
+        Poverty can be:
+    </p>
+    <ul>
+        <li><strong>Absolute Poverty:</strong> Severe deprivation of basic human needs.</li>
+        <li><strong>Relative Poverty:</strong> When individuals earn significantly less than the average in their society, limiting opportunities.</li>
+        <li><strong>Multidimensional Poverty:</strong> A combination of low income and lack of access to services like health and education.</li>
+    </ul>
+    <p>
+        The impacts of poverty are far-reaching, affecting physical health, mental well-being, social mobility, and future generations. Children in poverty face higher risks of malnutrition, limited education, and poor health outcomes.
+    </p>
+</section>
+
+<section id="facts">
+    <h2>Global Poverty Facts</h2>
+    <div class="stats">
+        <div class="stat-box">
+            <h3>700M+</h3>
+            <p>People live in extreme poverty (under $2.15/day)</p>
+        </div>
+
+        <div class="stat-box">
+            <h3>2B+</h3>
+            <p>People lack safely managed drinking water</p>
+        </div>
+
+        <div class="stat-box">
+            <h3>244M+</h3>
+            <p>Children are out of school globally</p>
+        </div>
+
+        <div class="stat-box">
+            <h3>50%</h3>
+            <p>World population lives on less than $5/day</p>
+        </div>
+    </div>
+</section>
+
+<section id="solutions">
+    <h2>Effective Solutions to Poverty</h2>
+    <p>
+        Combating poverty requires a multi-dimensional approach. Effective solutions include:
+    </p>
+    <ul>
+        <li><strong>Universal Education:</strong> Ensuring children have access to quality schooling improves future opportunities and economic growth.</li>
+        <li><strong>Sustainable Jobs & Fair Wages:</strong> Creating stable employment opportunities helps families achieve financial stability.</li>
+        <li><strong>Healthcare Access:</strong> Preventive care, vaccinations, and treatment reduce disease burden that can trap families in poverty.</li>
+        <li><strong>Gender Equality & Empowerment:</strong> Supporting women’s education and workforce participation reduces poverty across households.</li>
+        <li><strong>Local Business & Entrepreneurship:</strong> Encouraging small businesses strengthens local economies and provides livelihoods.</li>
+        <li><strong>Infrastructure & Sanitation:</strong> Safe drinking water, clean sanitation, and transportation improve quality of life and economic activity.</li>
+        <li><strong>Social Safety Nets:</strong> Government or community support programs help families survive shocks like natural disasters, illness, or job loss.</li>
+        <li><strong>Community Development:</strong> Empowering communities to make local decisions fosters sustainable long-term change.</li>
+    </ul>
+    <p>
+        These solutions work best when implemented together, combining education, healthcare, economic opportunity, and social support.
+    </p>
+</section>
+
+<section id="action" class="cta-section">
+    <h2>Take Action</h2>
+    <p>
+        You can help raise awareness and inspire change through interactive learning tools.
+    </p>
+
+    <button class="cta-btn"
+        onclick="window.open('https://scratch.mit.edu/projects/1275204003/fullscreen/', '_blank')">
+        🎮 Play Our Game
+    </button>
+
+    <button class="cta-btn"
+        onclick="window.open('https://studio.code.org/projects/applab/0a047ef1-39d9-4268-85e9-4583a7da0e35', '_blank')">
+        📱 Explore Our App
+    </button>
+</section>
+
+<footer>
+    © 2026 ZeroPoverty | Educational Awareness Initiative
+</footer>
+
+</body>
+</html>
